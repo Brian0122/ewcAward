@@ -9,4 +9,5 @@ var xmasRecord = new Schema({
  
 mongoose.model( 'xmasRecord', xmasRecord );
  
-mongoose.connect( 'mongodb://localhost/ewc' );
+//mongoose.connect( 'mongodb://localhost/ewc' );
+mongoose.connect( 'mongodb://ds053678.mongolab.com:53678/heroku_app20241895');
