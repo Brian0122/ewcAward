@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+  <script type="text/javascript" src="/js/jquery.min.js"></script>
+  <style type="text/css">
+  	#dr_ewcTable {
+  		padding-top: 30px;
+  	}
+  </style>
+</head>
+<body>
+
+<div class="table-responsive" id="dr_ewcTable">
+  <table class="table table-striped" style="margin:0 auto;width: 40%">
+    <% for(var i=0; i<users.length; i++) {%>
+   <tr>
+   	<td style="width:30%;">
+   	  <%= users[i].user_id %>
+   	</td>
+   	<td style="width:10%;">
+   	  <%= users[i].times * 1000 %>
+   	</td>
+     <% } %>
+   <tr>
+  </table>
+</div>
+
+</body>
+</html>

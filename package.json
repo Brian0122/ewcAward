@@ -1,0 +1,12 @@
+{
+  "name": "ewc",
+  "description": "ewc christmas party award",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.x",
+    "socket.io": "~0.9.6",
+    "connect"  : "1.8.7",
+    "mongoose" : "3.2.0"
+  }
+}
