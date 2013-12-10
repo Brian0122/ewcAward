@@ -31,8 +31,8 @@ app.get('/addUser', function(req, res) {
 	  		});
 	  		user.save(function (err) {
 	    		if (err) {
-	    			console.log('error');
-	    			return handleError(err);
+	    			console.log(err);
+	    			return ;
 	    		}
 	  		});
 	    	res.send(callback + '({statusMsg: "updated on server!"})');
