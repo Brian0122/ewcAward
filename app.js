@@ -20,8 +20,8 @@ app.get('/addUser', function(req, res) {
 	  var query = recordModel.findOne({ user_id: name });
 	  query.exec(function(err, record){
 	  	if (err) {
-	        console.log('error');
-	    	return handleError(err);
+	        console.log(err);
+	    	return ;
 	    }
 	    if(record == null) {
 	      	var user = new recordModel({
